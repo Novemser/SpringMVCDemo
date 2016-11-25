@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
  * Author:  Novemser
  * 2016/11/25
  */
+// 告知加载bean
 @Component
 public class SgtPeppers implements CompactDisc {
 

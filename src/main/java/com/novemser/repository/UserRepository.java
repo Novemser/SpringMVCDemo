@@ -14,10 +14,11 @@ import org.springframework.transaction.annotation.Transactional;
  * Author:  Novemser
  * 2016/11/20
  */
+@Transactional
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Integer> {
 
-    @Transactional  // 说明方法是事务性操作
+//    @Transactional  // 说明方法是事务性操作
     @Modifying      // 说明方法是修改操作
     @Query("update UserEntity us set " +
             "us.nickname=:qNickName," +
